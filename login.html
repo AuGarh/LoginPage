@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet/stylesheet.css">
+    <title>Log in</title>
+</head>
+
+<body>
+    <div class="center">
+        <div class="modal-left">
+            <!--เพิ่มแท็กนำหน้าล็อคอินอยู่หน้าซ้าย เนื้อหาข้างในเหมือนเดิมไม่ได้แก้-->
+            <h1>LOG IN</h1>
+            <form action="do_login.php" method="post" autocomplete="off">
+                <div class="txt-field">
+                    <input type="text" name="user" id="user" required>
+                    <label for="user">Username</label>
+                </div>
+                <div class="txt-field">
+                    <input type="password" name="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <button type="submit">Log in</button>
+                <a class="forgot" href="forgot_password.php">Forgot Password?</a>
+                <div class="signup-link">Not a member? <a href="signup.php">Sign Up</a>
+                </div>
+            </form>
+        </div>
+        <div class="modal-right">
+            <!--เพิ่มแท็กแทรกรูปอยู่หน้าขวา-->
+            <img src="img/test6.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
